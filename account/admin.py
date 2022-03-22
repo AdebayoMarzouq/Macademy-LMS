@@ -11,7 +11,7 @@ class CustomUserAdmin(UserAdmin):
     form = CustomUserChangeForm
     model = CustomUser
     list_filter = ('email', 'is_tutor', 'is_active')
-    list_display = ['username', 'email', 'first_name', 'last_name', 'is_tutor', 'age']
+    list_display = ['pk', 'username', 'email', 'first_name', 'last_name', 'is_tutor', 'age']
     add_fieldsets = UserAdmin.add_fieldsets + (
         (None, {
             'classes': ('wide',),
@@ -28,5 +28,6 @@ class CustomUserAdmin(UserAdmin):
 
 @admin.register(Profile)
 class ProfileAdmin(admin.ModelAdmin):
-    list_display = ['user', 'gender', 'phone_no', 'country']
+    list_display = ['pk', 'user', 'gender', 'phone_no', 'country']
     list_filter = ('gender', 'country')
+    ordering = ['pk']

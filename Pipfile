@@ -7,6 +7,8 @@ name = "pypi"
 django = "*"
 python-dotenv = "*"
 django-widget-tweaks = "*"
+django-countries = "*"
+django-phonenumber-field = {extras = ["phonenumbers"], version = "*"}
 
 [dev-packages]
 

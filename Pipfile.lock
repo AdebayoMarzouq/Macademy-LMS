@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "0a1d70263a538d8ee94ce9c67ce7167a5b5b8e24104be427399766463718d9ed"
+            "sha256": "21db12bdf4b1e73853fe7e1ec8cdba7eae83714ca5d4e3f6e0e5e46f37ba9923"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -32,6 +32,25 @@
             "index": "pypi",
             "version": "==4.0.3"
         },
+        "django-countries": {
+            "hashes": [
+                "sha256:0df6d34193667c2343da8935cbfb8a2bd4fb0c97baf01ac10db4628ba1557a82",
+                "sha256:27fc8a0f66a87c9d839493f3926b4e0f4dd873ef66465aa8cd3e953f99758cc9"
+            ],
+            "index": "pypi",
+            "version": "==7.3.2"
+        },
+        "django-phonenumber-field": {
+            "extras": [
+                "phonenumbers"
+            ],
+            "hashes": [
+                "sha256:897b902a1654b0eb21f6268498a3359e2c4eb90af9585cb8693af186ede8c5bb",
+                "sha256:b1ff950f90a8911ff323ccf77c8f6fe4299a9f671fa61c8734a6994359f07446"
+            ],
+            "index": "pypi",
+            "version": "==6.1.0"
+        },
         "django-widget-tweaks": {
             "hashes": [
                 "sha256:9bfc5c705684754a83cc81da328b39ad1b80f32bd0f4340e2a810cbab4b0c00e",
@@ -39,6 +58,13 @@
             ],
             "index": "pypi",
             "version": "==1.4.12"
+        },
+        "phonenumbers": {
+            "hashes": [
+                "sha256:94e30f59b2be6c4310a90f3d5da53d49900bdb440484506f3333c694ebb0cdab",
+                "sha256:e3af21c1e33a3dd063cddba3cad653abb8d23c37c62cedee597a3f3ea0f5365c"
+            ],
+            "version": "==8.12.45"
         },
         "python-dotenv": {
             "hashes": [
@@ -55,6 +81,14 @@
             ],
             "markers": "python_version >= '3.5'",
             "version": "==0.4.2"
+        },
+        "typing-extensions": {
+            "hashes": [
+                "sha256:1a9462dcc3347a79b1f1c0271fbe79e844580bb598bafa1ed208b94da3cdcd42",
+                "sha256:21c85e0fe4b9a155d0799430b0ad741cdce7e359660ccbd8b530613e8df88ce2"
+            ],
+            "markers": "python_version >= '3.6'",
+            "version": "==4.1.1"
         },
         "tzdata": {
             "hashes": [
