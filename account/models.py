@@ -12,9 +12,11 @@ class CustomUser(AbstractUser):
 
 
 class Profile(models.Model):
+    DEFAULT_PK = 1
     GENDER_CHOICES = [('M', 'Male'), ('F', 'Female')]
 
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    profile_pic = models.ImageField(upload_to='profile/%Y/%m/%d', default='default.png')
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
     phone_no = PhoneNumberField()
     address = models.CharField(max_length=250)
